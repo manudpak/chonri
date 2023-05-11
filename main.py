@@ -1,6 +1,3 @@
-from flask import Flask, jsonify
-import os
-
 # pip3 install transformers
 # pip install -q emoji pythainlp==2.2.4 sefr_cut tinydb seqeval sentencepiece pydantic jsonlines
 # pip3 install --no-deps thai2transformers==0.1.2
@@ -9,6 +6,7 @@ import os
 from flask import Flask, jsonify, request
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
+#import os
 
 labels_list = ['ถนน           ', 'ความสะอาด', 'แสงสว่าง   ', 'ความปลอดภัย', 'จราจร             ', 'อื่น ๆ      ']
 
