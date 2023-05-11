@@ -6,7 +6,7 @@
 from flask import Flask, jsonify, request
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
-#import os
+import os
 
 labels_list = ['ถนน           ', 'ความสะอาด', 'แสงสว่าง   ', 'ความปลอดภัย', 'จราจร             ', 'อื่น ๆ      ']
 
