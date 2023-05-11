@@ -26,7 +26,7 @@ def get_label():
     print(msg)
 
     # Load the saved model
-    model_path = "/Users/icp_pat/Desktop/model" # forgot change path!!!
+    model_path = "/model" # forgot change path!!!
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     model = AutoModelForSequenceClassification.from_pretrained(model_path)
 
